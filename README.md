@@ -1,4 +1,4 @@
-# updateMgmtVlan
+# merakiUpdateMgmtVlan
 This script will quickly update the management VLANs of all Meraki devices of a certain family within a given network. The script uses action batches by default, so it should have no problem updating hundreds or thousands of devices at a time.
 
 ## Prerequisites
