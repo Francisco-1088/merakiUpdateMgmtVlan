@@ -9,7 +9,7 @@ This script will quickly update the management VLANs of all Meraki devices of a 
 4. Install libraries in `requirements.txt`
 
 Usage:
-* Clone repo to your working directory with `git clone `
+* Clone repo to your working directory with `git clone https://github.com/Francisco-1088/updateMgmtVlan.git `
 * Install libraries with `pip install -r requirements.txt`
 * Update `config.py` file with your `api_key`, the desired `vlan_id` you will configure on the devices and the `product` family you wish to update (if looking to update Meraki APs, set this to MR, or if looking to update MS switches, set it to MS)
 * Execute with `python main.py`
