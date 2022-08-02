@@ -16,3 +16,7 @@ Usage:
 * When prompted, enter the number associated with the organization you wish to work in as displayed in the list
 * When prompted, enter the number associated with the network you wish to work in as displayed in the list
 * The script will tell you the number of devices of the selected family that will be updated, enter `Y` if you wish to proceed, or `N` if you wish to abort
+
+Caution:
+* This script assumes the devices will receive IP addresses via DHCP and that there is a reachable DHCP server in your VLAN of choice
+* Each action batch will update 100 devices, and a maximum of 5 will be running at a time. The script constantly checks for unfinished batches in groups of 5 before creatingg a new one (that is, it will not create a 6th batch until at least one of the 5 in queue are done).
